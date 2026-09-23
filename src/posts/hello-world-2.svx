@@ -1,0 +1,26 @@
+---
+title: 'Hello World V2'
+description: "My first blog post of my second blog."
+author: 'Sam Low'
+date: '2026-9-23'
+published: true
+---
+
+# Hello World 2
+
+```poem
+In the strife and sweat of crowds,
+under the sworn oaths and the stress of duty,
+when subject to the hand of the stranger,
+I pondered another life:
+"In the face of freedom, what might I become?"
+
+If only the future could howl back:
+"Deminished! Incredibly deminished!"
+```
+
+Hi! Sam Low here! This is my new blog. I started my first blog almost exactly 4 years ago. It was on tubbdoose.com but now TubbDoose is going mega patriot with a .CA domain! The website also makes slightly more sense. I wrote the code for my original blog in the summer after high school and crafted the strangest Flask app imagineable. I wrote posts in raw HTML through an admin page locked behind a HARD CODED password!!! The blog's content was then stored as a file locally in the machine but served dynamically!
+
+Despite my embaressing self-rolled "CMS", blogging was pretty fun! I annoyed a bio professor, took part in an absurd web epistollery, and someone even sent me an email that included the words "you genuinely seem like a cool person" (you never responded to my reply Melodie!!!) so I had at least 1 reader! I whined about university life mostly. I can't do that anymore because I'm no longer in university. I also don't have much of a life at the moment. So I'm hoping for blog version 2 to be more dedicated to ideas, devlogs, possibly some fiction. But there will definitely be life whining as well because I can't help myself.
+
+Hope this goes well!
