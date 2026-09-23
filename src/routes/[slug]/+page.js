@@ -1,8 +1,6 @@
 
 import { error } from '@sveltejs/kit';
-
-const slugFromPath = (path) =>
-	path.match(/([\w-]+)\.(svelte\.md|md|svx)/i)?.[1] ?? null;
+import { slugFromPath } from '$lib';
 
 export const load = async ({ params }) => {
 	const modules = import.meta.glob(`/src/posts/*.{md,svx,svelte.md}`);
