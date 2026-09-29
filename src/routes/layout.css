@@ -128,6 +128,7 @@ img.floating {
     > * {
         margin-inline: auto;
         max-width: 700px;
+        box-sizing: border-box;
     }
 
     h1 {
@@ -141,16 +142,22 @@ img.floating {
     }
 }
 
-.language-poem {
+.publish-line {
+    font-style: italic;
+}
+
+div.poem {
+    margin-block: 1em;
     font-style: italic;
     font-family: 'Nanum gothic';
     font-weight: 600;
     color: var(--colour-black-200);
     white-space: pre-line;
-}
-pre.language-poem {
-    margin-bottom: 2em;
-    padding-left: 1.5em;
     font-size: 0.9em;
     line-height: 1.5em;
+}
+
+blockquote {
+    padding-left: 1.5rem;
+    font-size: 0.9em;
 }
