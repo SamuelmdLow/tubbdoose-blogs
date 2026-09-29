@@ -45,16 +45,16 @@ jobs:
           SSH_HOST: ${{ secrets.PRODUCTION_SSH_HOST }}
 
       - name: Send zip to VM
-        run: scp build.tar production:p.tar
+        run: scp build.tar production:build.tar
 
       - name: Move build
-        run: ssh production "sudo mv p.tar ../../opt/tubbdoose"
+        run: ssh production "sudo mv build.tar ../../opt/tubbdoose"
 
       - name: Unzip build
-        run: ssh production "sudo tar -xf /opt/tubbdoose/p.tar -C /opt/tubbdoose/static"
+        run: ssh production "sudo tar -xf /opt/tubbdoose/build.tar -C /opt/tubbdoose/static"
 
       - name: Remove build zip
-        run: ssh production "sudo rm /opt/tubbdoose/p.tar"
+        run: ssh production "sudo rm /opt/tubbdoose/build.tar"
 
       - name: Reload Nginx container
         run: ssh production "sudo docker compose  -f /opt/docker-compose.yml up -d --force-recreate nginx"
