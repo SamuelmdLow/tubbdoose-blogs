@@ -53,8 +53,8 @@ jobs:
       - name: Unzip build
         run: ssh production "sudo tar -xf /opt/tubbdoose/p.tar -C /opt/tubbdoose/static"
 
-      - name: Remove build zip
-        run: ssh production "sudo rm /opt/tubbdoose/p.tar"
+      #- name: Remove build zip
+      #  run: ssh production "sudo rm /opt/tubbdoose/p.tar"
 
       - name: Reload Nginx container
         run: ssh production "sudo docker compose  -f /opt/docker-compose.yml up -d --force-recreate nginx"
